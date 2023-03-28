@@ -54,7 +54,7 @@ void setup()
   //fullScreen();
   background(0);
   fill(255);
-  stroke(255);
+  stroke(255); //lower the value to give a look of fading light
 }
 
 void draw()
@@ -68,7 +68,7 @@ void draw()
     line(wall[i].ini.x, wall[i].ini.y, wall[i].end.x, wall[i].end.y);
   }
 
-  for (float i = 0; i < 360; i+=5)
+  for (float i = 0; i < 360; i+=5) //decreace the update value to increace the number of rays.
   {
     dist = mag;
     
